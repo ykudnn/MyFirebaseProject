@@ -9,16 +9,19 @@
 
 <body>
   <h1>
+    <button id="login">Login</button>
+    <button id="logout" class="hidden">Logout</button>
     Firebase Chat
   </h1>
 
-  <ul id="messages"></ul>
-  <form autocomplete="off">
+  <ul id="messages" class="hidden"></ul>
+  <form autocomplete="off" class="hidden">
     <input type="text" id="message" placeholder="your message...">
   </form>
 
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
 
   <script src="js/main.js"></script>
 </body>
